@@ -4,15 +4,15 @@ defmodule Brainfuck do
   """
 
   @doc """
-  Hello world.
+  Brainfuck.run("++..")
 
   ## Examples
 
-      iex> Brainfuck.hello()
-      :world
+      iex> Brainfuck.run("")
+      {0, [0], ""}
 
   """
-  def hello do
-    :world
+  def run(program) do
+    Brainfuck.Interpreter.run(program)
   end
 end
